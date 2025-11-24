@@ -1,4 +1,4 @@
-Predicción de Niveles de Metano (CH₄) en Minería de Carbón — Boyacá
+**Predicción de Metano (CH₄) en Minería de Carbón — Boyacá**
 Universidad ECCI — Ingeniería · 2025
 
 Autores: Jonatan Steven Gómez · Nicolás González · Nicolás Palomino
