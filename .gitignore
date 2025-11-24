@@ -1,0 +1,32 @@
+  # Python cache
+__pycache__/
+*.pyc
+
+# Model files
+*.pkl
+*.joblib
+
+# Zip and compressed files
+*.zip
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+*.env
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environments
+venv/
+env/
