@@ -32,7 +32,7 @@ Tecnologías Utilizadas
 | Visualización       | Matplotlib                  |
 | Otros               | OpenPyXL                    |
 
-
+prediccion-metano-mineria-carbon-boyaca/
 │
 ├── src/
 │   ├── api/
