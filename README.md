@@ -22,15 +22,17 @@ Estructura profesional del repositorio
 El objetivo es aportar a la seguridad minera mediante detección temprana de riesgos explosivos.
 
 Tecnologías Utilizadas
-Categoría	Tecnologías
-Lenguaje	Python 3
-Data Science	Pandas, NumPy, Scikit-learn
-API	FastAPI, Uvicorn
-Guardado de modelos	Joblib
-Visualización	Matplotlib
-Otros	OpenPyXL
-Estructura del Proyecto
-prediccion-metano-mineria-carbon-boyaca/
+
+| Categoría           | Tecnologías                 |
+| ------------------- | --------------------------- |
+| Lenguaje            | Python 3                    |
+| Data Science        | Pandas, NumPy, Scikit-learn |
+| API                 | FastAPI, Uvicorn            |
+| Guardado de modelos | Joblib                      |
+| Visualización       | Matplotlib                  |
+| Otros               | OpenPyXL                    |
+
+
 │
 ├── src/
 │   ├── api/
