@@ -1,0 +1,6 @@
+Fecha de entrenamiento: 2025-11-24 15:56
+MAE: 0.2315
+RMSE: 0.3456
+R²: 0.7083
+Registros de entrenamiento: 400
+Registros de prueba: 100
