@@ -32,6 +32,7 @@ Tecnologías Utilizadas
 | Visualización       | Matplotlib                  |
 | Otros               | OpenPyXL                    |
 
+
 prediccion-metano-mineria-carbon-boyaca/
 │
 ├── src/
@@ -59,6 +60,7 @@ prediccion-metano-mineria-carbon-boyaca/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+
 
 Cómo ejecutar el proyecto
 Instalar dependencias
