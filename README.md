@@ -1,19 +1,114 @@
-# Predicción de Metano (CH₄) en Minería de Carbón - Boyacá
+Predicción de Niveles de Metano (CH₄) en Minería de Carbón — Boyacá
+Universidad ECCI — Ingeniería · 2025
 
-**Universidad ECCI - 2025**  
-**Integrantes:** Jonatan Gómez • Nicolás González • Nicolás Palomino
+Autores: Jonatan Steven Gómez · Nicolás González · Nicolás Palomino
 
-## Objetivo
-Desarrollar un modelo de **regresión lineal** para predecir niveles de metano combustible (COMB) en tiempo real usando sensores ambientales.
+📌 Descripción del Proyecto
 
-### Resultados del Modelo
-- R²: **~0.85 - 0.95** (dependiendo del dataset)
-- RMSE: **< 0.15%**
-- MAE: **< 0.12%**
+Este proyecto implementa un sistema completo de predicción del gas metano (COMB) en minas de carbón bajo tierra, utilizando:
 
-## Estructura del Repositorio
-├── modelo_completo.py          ← Script completo (limpieza + entrenamiento + gráficos)
-├── datos_limpios_mina.csv      ← Datos procesados listos para usar
-├── modelo_final/               ← Modelo entrenado (.pkl)
-├── requirements.txt            ← Dependencias
-└── README.md                   ← Este archivo
+Dispositivo Multidetector (O₂ mínimo, O₂ máximo, CO, H₂S y temperatura)
+
+Limpieza y transformación de datos
+
+Entrenamiento de un modelo de Regresión Lineal
+
+Exportación del modelo
+
+Creación de una API FastAPI para predicciones en tiempo real
+
+Estructura profesional del repositorio
+
+El objetivo es aportar a la seguridad minera mediante detección temprana de riesgos explosivos.
+
+Tecnologías Utilizadas
+Categoría	Tecnologías
+Lenguaje	Python 3
+Data Science	Pandas, NumPy, Scikit-learn
+API	FastAPI, Uvicorn
+Guardado de modelos	Joblib
+Visualización	Matplotlib
+Otros	OpenPyXL
+Estructura del Proyecto
+prediccion-metano-mineria-carbon-boyaca/
+│
+├── src/
+│   ├── api/
+│   │   └── api.py                   # API de predicción
+│   ├── model/
+│   │   └── entrenar_modelo.py       # Entrenamiento del modelo
+│   └── data_preparation/
+│       └── preparar_datos.py        # Limpieza de datos
+│
+├── modelo_final/
+│   ├── modelo_regresion_metano.pkl
+│   ├── scaler.pkl
+│   ├── feature_names.pkl
+│   ├── coeficientes.csv
+│   └── metrics.txt
+│
+├── data/
+│   ├── Database.xlsx
+│   └── datos_limpios_mina.csv
+│
+├── notebooks/
+│   └── Modelo_de_Prediccion.ipynb
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+
+Cómo ejecutar el proyecto
+Instalar dependencias
+pip install -r requirements.txt
+
+Entrenar el modelo desde cero
+
+Ejecutar el script:
+
+python src/model/entrenar_modelo.py
+
+
+Esto generará:
+
+modelo_regresion_metano.pkl
+
+scaler.pkl
+
+feature_names.pkl
+
+coeficientes.csv
+
+metrics.txt
+
+API de Predicción (FastAPI)
+Cómo iniciar la API
+
+Ejecuta:
+
+uvicorn src.api.api:app --reload
+
+Endpoints
+GET /
+
+Prueba de vida
+Devuelve un mensaje indicando que la API funciona.
+
+POST /predict
+
+Recibe datos ambientales y retorna el nivel predicho de metano.
+
+Resultados del Modelo con 500 datos
+Métrica	Resultado
+R²	0.71
+MAE	< 0.23%
+RMSE	< 0.35%
+
+El modelo presenta la capacidad de predicción para aplicaciones mineras.
+
+Automatizar el entrenamiento con GitHub Actions
+
+📬 Contacto
+
+Creador: Jonatan Steven Gómez Avellaneda
+Proyecto académico · Universidad ECCI
