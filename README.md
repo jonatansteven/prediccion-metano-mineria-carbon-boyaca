@@ -91,10 +91,8 @@ Cómo iniciar la API
 
 Ejecuta:
 
-uvicorn src.api.api:app --reload
+api uvicorn api:app --host 0.0.0.0 --port 8000
 
-Endpoints
-GET /
 
 Prueba de vida
 Devuelve un mensaje indicando que la API funciona.
